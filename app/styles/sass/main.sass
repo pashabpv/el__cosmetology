@@ -1,0 +1,156 @@
+@import config
+@import "blocks/**/*"
+
+// Style
+
+.section
+	text-align: center
+	.section__title
+		font-size: 30px
+		font-weight: 600
+		text-transform: uppercase
+		padding-bottom: 35px
+
+.btn 
+	display: block
+	width: 640px
+	max-width: 100%
+	padding: 12px 22px
+	margin: 0 auto
+	border-radius: 50px
+	font-size: 26px
+	font-weight: 800
+	text-transform: uppercase
+	color: #fff
+	background: $accent
+	transition: all 0.5s ease
+	text-shadow: 3px 3px 7px #00000066
+	box-shadow: 0px 3px 5px 0px rgba(255, 33, 133, 1)
+	&:hover 
+		background: #e2236b
+		box-shadow: 0px 0px 0px 0px rgba(255, 33, 133, 1)
+		color: #fff
+		text-shadow: 0px 0px 0px #00000066
+
+.header  
+	text-align: center
+	padding-bottom: 80px
+	.profile 
+		position: relative
+		padding: 18px 0 34px
+		display: block
+		text-align: center
+		.profile__avatar
+			display: inline-block
+			width: 200px
+			height: 200px
+			border-radius: 50%
+			overflow: hidden 
+			& > img
+				transform: rotate(342deg) scale(1.2)
+		.profile__insta
+			font-size: 22px
+		
+	.header__title
+		font-size: 30px
+		font-weight: 600
+		text-transform: uppercase
+		padding: 0 0 15px
+	.header__desc
+		padding: 0px 0 45px
+		font-size: 26px
+		line-height: 1.2
+		text-transform: uppercase
+		& > strong
+			font-size: 26px
+			font-weight: 600
+			color: $accent
+
+.service-list
+	padding-bottom: 25px
+	
+	.service-list__item
+		margin-bottom: 15px
+
+		.img-wrap
+			width: 250px
+			margin: 0 auto
+			border-radius: 25px
+			overflow: hidden
+			& img
+				transition: all 1s ease-out
+				&:hover
+					transform: scale(1.1)
+
+		.service-list__title
+			font-weight: 600
+			padding: 10px 0 0
+
+.price
+
+	.price__title
+		font-size: 22px
+		font-weight: 600
+		color: $accent
+		padding: 18px 0 18px
+	
+	.price__list
+		display: flex
+		justify-content: space-between
+		padding: 0.1em
+		font-size: 18px
+		font-weight: 600
+		.price__list-name 
+			text-align: left
+.contacts
+	.btn
+		margin-bottom: 25px
+
+.contacts-footer
+	display: inline-block
+	text-transform: uppercase
+	font-size: 18px
+	font-weight: 600
+	.btn
+		margin-bottom: 25px
+
+	.contacts-footer__item
+		display: block
+		position: relative
+		padding-left: 40px
+		text-align: left
+		margin-bottom: 18px
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			top: 0
+			bottom: 0
+			left: 0
+
+
+footer 
+	padding: 65px 0 20px
+	
+	.contacts-footer_maps
+		&:before
+			background: url(../images/dist/map-marker-alt-solid.svg) no-repeat
+			width: 24px
+			height: 32px
+			top: -4px
+
+	.contacts-footer_tel
+		&:before
+			background: url(../images/dist/phone-alt-solid.svg) no-repeat
+			width: 24px
+			height: 28px
+			top: 0
+
+	.contacts-footer_insta
+		color: $accent
+		&:before
+			background: url(../images/dist/instagram-brands.svg) no-repeat
+			width: 24px
+			height: 28px
+
+
